@@ -16,8 +16,13 @@ function SavedList({ list }) {
           </NavLink>
         );
       })}
-      <div className="home-button">
-        <Link to="/">Home</Link>
+      <div style={{display: 'flex', flexFlow: 'row nowrap'}}>
+        <div className="home-button">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="add-button" style={{ marginLeft: '13px' }}>
+          <Link to="/add-movie">New Movie</Link>
+        </div>
       </div>
     </div>
   );
